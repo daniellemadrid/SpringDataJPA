@@ -7,8 +7,8 @@ Objetivos:
 
 Atividades:
 
-1) Consolide o exercício inicial de Spring DATA JPA, criando alguns serviços:
-2) 
+Consolide o exercício inicial de Spring DATA JPA, criando alguns serviços:
+
 • Uma rota que permita salvar um cliente no Bano de Dados;
 
 • Uma rota que permita recuperar todos os clientes do BD;
