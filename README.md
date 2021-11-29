@@ -4,6 +4,7 @@ Objetivos:
 
 • Compreender o papel do Java Persistence API (JPA).
 • Configurar o mapeamento objeto-relacional de entidades.
+
 Atividades:
 
 1) Consolide o exercício inicial de Spring DATA JPA, criando alguns serviços:
