@@ -5,17 +5,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+@Entity // entidade do banco de dados
 public class Customer {
 
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @Id //identificador
+    @GeneratedValue(strategy = GenerationType.AUTO) //colocar automaticamente os valores da tabela no banco de dados
     private Long id;
     private String firstName;
     private String lastName;
 
-    protected Customer() {}
+    protected Customer() {
+    }
 
+    // construtor
     public Customer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -26,7 +28,7 @@ public class Customer {
         return String.format(
                 "Customer[id=%d, firstName='%s', lastName='%s']",
                 id, firstName, lastName);
-    }
+    } // retorna os atributos dos clientes em string
 
     public Long getId() {
         return id;
