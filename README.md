@@ -3,6 +3,7 @@
 Objetivos:
 
 • Compreender o papel do Java Persistence API (JPA).
+
 • Configurar o mapeamento objeto-relacional de entidades.
 
 Atividades:
