@@ -10,7 +10,7 @@ import java.util.List;
 @Component
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
-    Iterable<Customer>findByLastName(String lastName);
+    List<Customer>findByLastName(String lastName);
 
     Customer findById(long id);
 
