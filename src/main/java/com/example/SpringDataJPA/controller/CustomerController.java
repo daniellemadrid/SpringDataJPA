@@ -4,6 +4,8 @@ import com.example.SpringDataJPA.model.Customer;
 import com.example.SpringDataJPA.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
@@ -14,9 +16,9 @@ public class CustomerController {
     private CustomerService customerService;
 
     @PostMapping
-    public Customer save(@RequestBody Customer customer){
+    public ResponseEntity save(@RequestBody Customer customer) {
         customerService.save(customer);
-        return customer;
+        return new ResponseEntity(HttpStatus.CREATED);
     }
 
     @GetMapping("/{id}")
